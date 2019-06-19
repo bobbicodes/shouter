@@ -4,33 +4,12 @@ The awesome [Heroku tutorial](https://devcenter.heroku.com/articles/clojure-web-
 
 ## Local database setup
 
-This is all sorts of weird. But some combination of the following resulted in success:
-
 ```
 sudo apt install postgresql
-/usr/lib/postgresql/10/bin/initdb pg
-postgres -D pg &
-/usr/lib/postgresql/10/bin/pg_ctl -D pg -l logfile start
-sudo chown -R postgres:postgres /var/run/postgresql
-/usr/lib/postgresql/10/bin/pg_ctl -D pg -l logfile start
-sudo pkill -u postgres
-/usr/lib/postgresql/10/bin/pg_ctl -D pg -l logfile start
+initdb pg
 sudo chown -R porky:porky /var/run/postgresql
-/usr/lib/postgresql/10/bin/pg_ctl -D pg -l logfile start
+pg_ctl -D pg -l logfile start
 createdb shouter
-lein repl
-lein run -m shouter.web
-lein uberjar
-java $JVM_OPTS -jar target/shouter-standalone.jar
-git init
-git add .
-git commit -m "init"
-heroku create
-heroku addons:create heroku-postgresql
-git push heroku master
-git remote add origin git@github.com:porkostomus/shouter.git
-git push -u origin master
-
 ```
 
 ## Usage
