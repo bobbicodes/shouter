@@ -1,0 +1,22 @@
+2019-06-18 17:47:45.809 PDT [22020] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-06-18 17:47:45.809 PDT [22020] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-06-18 17:47:45.809 PDT [22020] WARNING:  could not create listen socket for "localhost"
+2019-06-18 17:47:45.809 PDT [22020] FATAL:  could not create any TCP/IP sockets
+2019-06-18 17:47:45.809 PDT [22020] LOG:  database system is shut down
+2019-06-18 17:48:06.712 PDT [22029] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-06-18 17:48:06.712 PDT [22029] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-06-18 17:48:06.713 PDT [22029] WARNING:  could not create listen socket for "localhost"
+2019-06-18 17:48:06.713 PDT [22029] FATAL:  could not create any TCP/IP sockets
+2019-06-18 17:48:06.713 PDT [22029] LOG:  database system is shut down
+2019-06-18 17:49:35.020 PDT [22086] LOG:  could not bind IPv4 address "127.0.0.1": Address already in use
+2019-06-18 17:49:35.020 PDT [22086] HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+2019-06-18 17:49:35.020 PDT [22086] WARNING:  could not create listen socket for "localhost"
+2019-06-18 17:49:35.020 PDT [22086] FATAL:  could not create any TCP/IP sockets
+2019-06-18 17:49:35.020 PDT [22086] LOG:  database system is shut down
+2019-06-18 17:50:49.115 PDT [22179] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-06-18 17:50:49.117 PDT [22179] FATAL:  could not create lock file "/var/run/postgresql/.s.PGSQL.5432.lock": Permission denied
+2019-06-18 17:50:49.117 PDT [22179] LOG:  database system is shut down
+2019-06-18 17:51:50.520 PDT [22199] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2019-06-18 17:51:50.522 PDT [22199] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2019-06-18 17:51:50.540 PDT [22200] LOG:  database system was shut down at 2019-06-18 17:46:56 PDT
+2019-06-18 17:51:50.551 PDT [22199] LOG:  database system is ready to accept connections
